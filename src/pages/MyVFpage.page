@@ -1,0 +1,10 @@
+<apex:page sidebar="false">
+  <apex:pageBlock title="A Block Title">
+    <apex:pageBlockSection title="A Section Title">
+      Hi {!$User.FirstName} {!$User.LastName}, {!IF (CONTAINS('salesforce.com', 'force.com'), 'yep', 'Nah')}
+    </apex:pageBlockSection>
+    <apex:pageBlockSection title="Section Two">
+     {!IF (DAY(TODAY())>14, '14th has already passed', 'wait till 14th arrives')}
+    </apex:pageBlockSection>
+  </apex:pageBlock>
+</apex:page>
